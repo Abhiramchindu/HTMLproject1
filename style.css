@@ -238,10 +238,12 @@ align-items:center;
   color: var(--light-bg);
 }
 
+/*div2*/
+
 .containerdiv2{
   max-width: 960px;
   margin: 0 auto;
-  padding:px;
+  padding:10px;
 }
 .subheading {
   color: #28A745;
@@ -285,3 +287,13 @@ h3{
   transform: translateY(-5px);
   transition: all 0.3s ease;
 }
+
+
+
+
+
+
+/* div3*/
+
+
+
