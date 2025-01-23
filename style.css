@@ -238,3 +238,50 @@ align-items:center;
   color: var(--light-bg);
 }
 
+.containerdiv2{
+  max-width: 960px;
+  margin: 0 auto;
+  padding:px;
+}
+.subheading {
+  color: #28A745;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+.section {
+  display: flex;
+  flex-wrap: 1;
+  justify-content: space-between;
+}
+h3{
+    text-decoration: underline;
+    text-decoration-color: red; 
+    text-decoration-thickness: 3px; 
+}
+.card {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: calc(20% - 20px); /* Adjust for margins */
+}
+
+.card img {
+  background: #bbd7ee;
+  color: blueviolet;
+  max-width: 60px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  
+}
+
+/* Add hover effect for cards (optional) */
+.card:hover {
+  background-color: #28A745;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
