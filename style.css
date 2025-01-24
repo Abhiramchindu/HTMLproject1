@@ -69,16 +69,38 @@ align-items:center;
   padding: 40px;
 }
 
-.hero-content {
+.containerhero-content {
   display: flex;
+  
   justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
 }
 
 .hero-text {
-  max-width: 50%;
+  float: left;
+  margin: 40px;
+  width:40%;
+  height: 50%;
 }
+.hero-image {
+  float: right;
+  display: flex;
+  width: 30%;
+  height: 50%;
+}
+.hero-image .image2{
+  border-radius: 20px;
+  left:70%;
+  top: 40%;
+  position:absolute;
+  width: 20%;
+  height: 40%;
+}
+.hero-image .image1{
+  border-radius: 20px;
+  width: 450px;
+  height: 400px;
+}
+
 
 .hero-text .subheading {
   color: #28A745;
@@ -121,123 +143,6 @@ align-items:center;
   font-size: 1rem;
 }
 
-/* Hero Image */
-.hero-image1{
-  margin-right: 90px; 
-  width: 20%; 
-  max-width: 30px; 
-  height: auto; 
-  border-radius: 10px;
-}
-.hero-image1{
-  margin-right: 100px; 
-  width: 20%; 
-  max-width: 30px; 
-  height: auto; 
-  border-radius: 10px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 80px 20px;
-  gap: 40px;
-  max-width: 1050px;
-  margin: auto;
-  background: var(--light-bg);
-}
-
-.heading-section {
-  text-align: left;
-  max-width: 700px;
-}
-
-.subheading {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--primary-color);
-  margin-bottom: 10px;
-}
-
-.main-heading {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 32px;
-  line-height: 40px;
-  color: var(--text-color);
-  margin-bottom: 20px;
-}
-
-.description {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-  color: var(--secondary-text-color);
-}
-
-.card-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-  width: 230px;
-  height: 292px;
-  background: var(--light-bg);
-  box-shadow: var(--shadow);
-  border-radius: 8px;
-}
-
-.card.primary {
-  background: var(--primary-color);
-  color: var(--light-bg);
-}
-
-.icon {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 15px;
-}
-
-.card-title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-  color: var(--text-color);
-  margin-bottom: 10px;
-}
-
-.card.primary .card-title {
-  color: var(--light-bg);
-}
-
-.divider {
-  width: 50px;
-  height: 2px;
-  background: var(--danger-color);
-  margin: 10px 0;
-}
-
-.card-text {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: var(--secondary-text-color);
-}
-
-.card.primary .card-text {
-  color: var(--light-bg);
-}
-
 /*div2*/
 
 .containerdiv2{
@@ -259,12 +164,12 @@ h1 {
   flex-wrap: 1;
   justify-content: space-between;
 }
-h3{
-    text-decoration: underline;
-    text-decoration-color: red; 
-    text-decoration-thickness: 3px; 
+.underline{
+  width: 70px;
+  height: 3px;
+  background:red;
 }
-.card {
+.iconcard {
   background-color: #f0f0f0;
   border-radius: 5px;
   padding: 20px;
@@ -272,12 +177,56 @@ h3{
   width: calc(20% - 20px); /* Adjust for margins */
 }
 
-.card img {
+.iconcard img {
   background: #bbd7ee;
   color: blueviolet;
   max-width: 60px;
   margin-bottom: 10px;
   border-radius: 10px;
+  
+}
+
+/* Add hover effect for cards (optional) */
+.iconcard:hover {
+  background-color: #28A745;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+/*div3*/
+.containerdiv3{
+  max-width: 960px;
+  margin: 0 auto;
+  padding:10px;
+}
+.subheading {
+  color: #28A745;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+.section {
+  display: flex;
+  flex-wrap: 1;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: calc(20% - 20px); /* Adjust for margins */  
+}
+
+.card img {
+  background: #bbd7ee;
+  color: blueviolet;
+  max-width: 100%;
+ 
   
 }
 
@@ -288,12 +237,34 @@ h3{
   transition: all 0.3s ease;
 }
 
+.containerdiv4 {
+  background-color: #263358;
+  margin:40px;
+  display: flex; /* Use flexbox for easy layout */
+  align-items: center; /* Vertically center items */
+}
+.div4h1, .div4text{
+  color: #f5f5f5;
+}
+.image-container {
+  padding: 40px;
+  flex: 1; /* Make the image container take up equal space */
+}
 
+.text-container {
+  flex: 1; /* Make the text container take up equal space */
+  padding-left: 20px; /* Add some space between image and text */
+}
+.div4button{
+  text-decoration-style: none;
+  color: #28A745;
+}
+.divunderline{
+  width: 120px;
+  height: 3px;
+  background:red;
+}
 
-
-
-
-/* div3*/
 
 
 
